@@ -3,6 +3,7 @@
     <head>
         <title>MBTI</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, intial-scale=1">
         <style>
             h1 {
                 text-align : center;    
@@ -25,6 +26,33 @@
             #I {
                 color: blue;
             }
+            #grid ul {
+                border-right: 1px solid gray;
+                width: 100px;
+                margin: 0px;
+                padding: 20px;
+            }
+  
+            body {
+                margin: 5px;
+            }
+            div {
+                border: 1px solid black;
+            }
+            #grid {
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+            @media(max-width: 768px){
+            #grid {
+                display: block;
+                }
+            }
+            @media(min-width: 1024){
+            #grid {
+                display: block;
+            }
+            }      
         </style>
     </head>
     <body>
@@ -32,25 +60,30 @@
             <h1>MBTI 알아보기</h1>
         </header>
         <nav>
-            <span>본인의 MBTI를 선택해주세요</span>
-            <ul>
-                <li><a href="ENFP.html" class="E">ENFP</a></li>
-                <li><a href="ENFJ.html" class="E">ENFJ</a></li>
-                <li><a href="ENTP.html" class="E">ENTP</a></li>
-                <li><a href="ENTJ.html" class="E">ENTJ</a></li>
-                <li><a href="ESFP.html" class="E">ESFP</a></li>
-                <li><a href="ESFJ.html" class="E">ESFJ</a></li>
-                <li><a href="ESTP.html" class="E">ESTP</a></li>
-                <li><a href="ESTJ.html" class="E">ESTJ</a></li>
-                <li><a href="INFP.html" id="I">INFP</a></li>
-                <li><a href="INFJ.html" id="I">INFJ</a></li>
-                <li><a href="INTP.html" id="I">INTP</a></li>
-                <li><a href="INTJ.html" id="I">INTJ</a></li>
-                <li><a href="ISFP.html" id="I">ISFP</a></li>
-                <li><a href="ISFJ.html" id="I">ISFJ</a></li>
-                <li><a href="ISTP.html" id="I">ISTP</a></li>
-                <li><a href="ISTJ.html" id="I">ISTJ</a></li>
-            </ul>
+            <span>&nbsp;본인의 MBTI를 선택해주세요</span>
+            <div id="grid">
+                <ul>
+                    <li><a href="ENFP.html" target="rigth" class="E">ENFP</a></li>
+                    <li><a href="ENFJ.html" target="rigth" class="E">ENFJ</a></li>
+                    <li><a href="ENTP.html" target="rigth" class="E">ENTP</a></li>
+                    <li><a href="ENTJ.html" target="rigth" class="E">ENTJ</a></li>
+                    <li><a href="ESFP.html" target="rigth" class="E">ESFP</a></li>
+                    <li><a href="ESFJ.html" target="rigth" class="E">ESFJ</a></li>
+                    <li><a href="ESTP.html" target="rigth" class="E">ESTP</a></li>
+                    <li><a href="ESTJ.html" target="rigth" class="E">ESTJ</a></li>
+                    <li><a href="INFP.html" target="rigth" id="I">INFP</a></li>
+                    <li><a href="INFJ.html" target="rigth" id="I">INFJ</a></li>
+                    <li><a href="INTP.html" target="rigth" id="I">INTP</a></li>
+                    <li><a href="INTJ.html" target="rigth" id="I">INTJ</a></li>
+                    <li><a href="ISFP.html" target="rigth" id="I">ISFP</a></li>
+                    <li><a href="ISFJ.html" target="rigth" id="I">ISFJ</a></li>
+                    <li><a href="ISTP.html" target="rigth" id="I">ISTP</a></li>
+                    <li><a href="ISTJ.html" target="rigth" id="I">ISTJ</a></li>
+                </ul>
+                <div>
+                    <iframe name="rigth" src="" width="1250px" height="1000px"></iframe>
+                </div>
+            </div>
         </nav>
     </body>
 </html>
