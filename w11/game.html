@@ -11,6 +11,9 @@
             ol {
                 font-size : 20px;   
             }
+            li {
+                margin : 10px;
+            }
         </style>
     </head>
     <body>
@@ -23,7 +26,7 @@
             var i = 0;
             while (i < maps.length) {
                 document.write('<li><a href="https://ko.wikipedia.org/wiki/월드_오브_워크래프트:_' + maps[i] + '">' + maps[i] + '</a></li>');
-                document.write('<a href="https://ko.wikipedia.org/wiki/월드_오브_워크래프트:_' + maps[i] + '"><img src="' + images[i] + '"width="300" height="400"></a>' + '\n');
+                document.write('<a href="https://ko.wikipedia.org/wiki/월드_오브_워크래프트:_' + maps[i] + '"><img src="' + images[i] + '"width="300" height="400"></a>');
                 i += 1;
             }
         </script>
