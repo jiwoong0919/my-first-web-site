@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>array_practic</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>포켓몬스터</h1>
+        <h2>스칼렛 바이올렛</h2>
+        <h3>스타팅 포켓몬</h3>
+        <ol>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%82%98%EC%98%A4%ED%95%98">나오하</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%9C%A8%EC%95%84%EA%B1%B0">뜨아거</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EA%BE%B8%EC%99%81%EC%8A%A4">꾸왁스</a></li>
+        </ol>
+        <ul>
+        <script>
+            pokemons = ["나오하","뜨아거","꾸왁스","피카츄","파이리"];
+            var i = 0;
+            while (i < pokemons.length) {
+                document.write('<li><a href="https://ko.wikipedia.org/wiki/' + pokemons[i] + '">' + pokemons[i] + '</a></li>');
+                i += 1;
+            }
+        </script>
+        </ul>
+    </body>
+</html>
